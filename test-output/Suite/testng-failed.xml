@@ -6,6 +6,21 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="testSpiceJet.TC_03_ValidateSignUp">
+        <methods>
+          <include name="tc_03_ValidateSignUp" invocation-numbers="0 1"/>
+          <include name="close"/>
+          <include name="start"/>
+          <include name="declareSheetName"/>
+        </methods>
+      </class> <!-- testSpiceJet.TC_03_ValidateSignUp -->
+      <class name="testSpiceJet.TC_06_SelectFlight">
+        <methods>
+          <include name="close"/>
+          <include name="start"/>
+          <include name="tc_06_SelectFlight"/>
+        </methods>
+      </class> <!-- testSpiceJet.TC_06_SelectFlight -->
       <class name="testSpiceJet.TC_07_FillingPassengerAndPaymentInfo">
         <methods>
           <include name="tc_07_FillingPassengerAndPaymentInfo"/>

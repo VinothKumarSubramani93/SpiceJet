@@ -22,6 +22,6 @@ public class BaseClassSJ extends UtilsSpiceJet {
 	
 	@AfterMethod
 	public void close() throws Exception {
-		//driver.quit();
+		driver.quit();
 	}
 }

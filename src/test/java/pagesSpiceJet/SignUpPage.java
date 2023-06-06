@@ -67,29 +67,12 @@ public class SignUpPage extends BaseClassSJ {
 		selectFromDropDown(countryDropDown, country);
 		datePick(day, month, year);
 		type(mobileNumber, mobNumber);
-		waitExplicit(email);
-		Thread.sleep(10000);
 		type(email, emailId);
-		waitExplicit(password);
 		type(password, pwd);
-		waitExplicit(confirmPassword);
 		type(confirmPassword, cnfPwd);
-		jsClickOn(tcCheckBox);
-		jsClickOn(submitButton);
+		clickOn(tcCheckBox);
+		clickOn(submitButton);
 		String actText = extractText(driver.findElement(By.xpath(""+xpath+"")));
 		return actText;
-	}
-	
-	public void enroll(String title, String fName, String lName, String country, String day,String month, 
-			String year,String mobNumber, String emailId) throws Exception {
-		selectFromDropDown(titleDropDown, title);
-		type(firstName, fName);
-		type(lastName, lName);
-		selectFromDropDown(countryDropDown, country);
-		datePick(day, month, year);
-		type(mobileNumber, mobNumber);
-		clickOn(email);
-		Thread.sleep(15000);
-		type(email, emailId);
 	}
 }

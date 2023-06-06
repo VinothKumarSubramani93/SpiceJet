@@ -31,7 +31,6 @@ public class PassengerPage extends BaseClassSJ {
 	
 	@FindBy(xpath="//input[@placeholder='Search']")
 	WebElement searchCountry;
-	//div[@class='css-76zvg2 r-qsz3a2 r-poiln3 r-n6v787 r-1e081e0 r-oyd9sg']
 	
 	@FindBy(xpath="//div[contains(text(),'I prefer not to receive')]")
 	WebElement preferNotCheckBox;
@@ -50,7 +49,6 @@ public class PassengerPage extends BaseClassSJ {
 	
 	@FindBy(id="skipfrompopup")
 	WebElement skipForSkipComfort;
-	//id="skipfrompopup"
 	
 	public PassengerPage() {
 		PageFactory.initElements(driver, this);

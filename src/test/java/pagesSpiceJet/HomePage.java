@@ -100,30 +100,6 @@ public class HomePage extends BaseClassSJ {
 		selectDestination(destinationPlace);
 	}
 	
-	public void selectDepartureDate(String date,String month, String year) throws Exception {
-		clickOn(departureDate);
-		while(true) {
-		String monthyear = driver.findElement(By.xpath("//div[@class='css-76zvg2 r-homxoj r-adyw6z r-1kfrs79']")).getText();
-		String[] arr = monthyear.split(" ");
-		String mon = arr[0];
-		String yr = arr[1];
-		
-		if(mon.equalsIgnoreCase(month) && yr.equals(year))
-			break;
-		else
-			nextOnCalander.click();
-		}
-		
-		List<WebElement> allDates = driver.findElements(By.xpath("//div[@data-testid='undefined-month-"+month+"-2023']//div[@class='css-76zvg2 r-homxoj r-ubezar r-16dba41']"));
-		for (WebElement ele : allDates) {
-			String dt = ele.getText();
-			if(dt.equals(date)) {
-				ele.click();
-				break;
-			}
-		}
-	}
-	
 	public void setDepartureDate(String depDate,String depMonth) {
 		jsClickOn(departureDate);
 		WebElement selDate = driver.findElement(By.xpath("//div[@data-testid='undefined-month-"+depMonth+"-2023']//div[text()='"+depDate+"']"));

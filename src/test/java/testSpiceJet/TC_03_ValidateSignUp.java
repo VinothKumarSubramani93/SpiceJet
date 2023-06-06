@@ -12,7 +12,7 @@ public class TC_03_ValidateSignUp extends BaseClassSJ {
 	
 	@BeforeTest
 	public void declareSheetName() {
-		sheetName="signUpTestData2";
+		sheetName="signUpTestData";
 	}
 	@Test(dataProvider="getExcelData")
 	public void tc_03_ValidateSignUp(String title, String fName, String lName, String country,String day,String month,String year,

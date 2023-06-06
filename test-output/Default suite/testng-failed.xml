@@ -5,7 +5,7 @@
     <classes>
       <class name="testSpiceJet.TC_03_ValidateSignUp">
         <methods>
-          <include name="tc_03_ValidateSignUp" invocation-numbers="0"/>
+          <include name="tc_03_ValidateSignUp" invocation-numbers="1"/>
           <include name="close"/>
           <include name="start"/>
           <include name="declareSheetName"/>
