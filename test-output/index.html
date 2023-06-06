@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
+                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -105,11 +105,6 @@
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Failed_suite__Suite_" title="testSpiceJet.TC_03_ValidateSignUp" class="method navigator-link" hash-for-method="tc_03_ValidateSignUp(Mr, Jaiswal, S, India, 29, September, 1996, 1234567890, ninu@gmail.com, qwerty@123QWERTY, qwerty@123...)">tc_03_ValidateSignUp(Mr, Jaiswal, S, India, 29, September, 1996, 1234567890, ninu@gmail.com, qwerty@123QWERTY, qwerty@123...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Failed_suite__Suite_" title="testSpiceJet.TC_07_FillingPassengerAndPaymentInfo" class="method navigator-link" hash-for-method="tc_07_FillingPassengerAndPaymentInfo">tc_07_FillingPassengerAndPaymentInfo</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Failed_suite__Suite_ -->
@@ -128,7 +123,22 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Failed_suite__Suite_" title="testSpiceJet.TC_06_SelectFlight" class="method navigator-link" hash-for-method="tc_06_SelectFlight">tc_06_SelectFlight</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Failed_suite__Suite_" title="testSpiceJet.TC_04_LoginFunctionality" class="method navigator-link" hash-for-method="tc_04_LoginFunctionality(ninugmail.com, qwerty@123QwERTY, //div[@class=&#039;css-76zvg2 r-1ttbpl1 r-18tvxmy r-1enofrn r-1bymd8e&#039;],...)">tc_04_LoginFunctionality(ninugmail.com, qwerty@123QwERTY, //div[@class='css-76zvg2 r-1ttbpl1 r-18tvxmy r-1enofrn r-1bymd8e'],...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Failed_suite__Suite_" title="testSpiceJet.TC_04_LoginFunctionality" class="method navigator-link" hash-for-method="tc_04_LoginFunctionality(, qwerty@123QWERTY, //div[@class=&#039;css-76zvg2 r-1ttbpl1 r-18tvxmy r-1enofrn r-1bymd8e&#039;], Please enter...)">tc_04_LoginFunctionality(, qwerty@123QWERTY, //div[@class='css-76zvg2 r-1ttbpl1 r-18tvxmy r-1enofrn r-1bymd8e'], Please enter...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Failed_suite__Suite_" title="testSpiceJet.TC_04_LoginFunctionality" class="method navigator-link" hash-for-method="tc_04_LoginFunctionality(ninu@gmail.com, , //div[text()=&#039;Please enter a valid password&#039;], Please enter a valid password)">tc_04_LoginFunctionality(ninu@gmail.com, , //div[text()='Please enter a valid password'], Please enter a valid password)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Failed_suite__Suite_" title="testSpiceJet.TC_04_LoginFunctionality" class="method navigator-link" hash-for-method="tc_04_LoginFunctionality(ninu@gmail.com, qwerty@123QwERTY, //div[contains(text(),&#039;Invalid Username/Password&#039;)], Invalid Usern...)">tc_04_LoginFunctionality(ninu@gmail.com, qwerty@123QwERTY, //div[contains(text(),'Invalid Username/Password')], Invalid Usern...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Failed_suite__Suite_ -->
@@ -155,13 +165,13 @@
                   </a> <!-- tc_03_ValidateSignUp(Mr, Jaiswal, S, India, 29, September, 1996, 1234567890, ninu@gmail.com, qwerty@123QWERTY, qwerty@123...) -->
                   <span class="method-name">tc_03_ValidateSignUp</span>
                   <span class="parameters">(Mr, Jaiswal, S, India, 29, September, 1996, 1234567890, ninu@gmail.com, qwerty@123QWERTY, qwerty@123QWERTY, //label[text()='OTP Verification'], OTP Verification)</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (83, 800)
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=114.0.5735.110)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-N995C3G&apos;, ip: &apos;192.168.225.33&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+System info: host: &apos;DESKTOP-N995C3G&apos;, ip: &apos;192.168.43.6&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:51223}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3732b0bd93d68c8b52f3b06137d8a82e
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:60567}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 20ccfdf76365fa332ed1f6c564ddc0a5
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -169,39 +179,59 @@ Session ID: 3732b0bd93d68c8b52f3b06137d8a82e
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
-	at utilsSpiceJet.UtilsSpiceJet.clickOn(UtilsSpiceJet.java:104)
-	at pagesSpiceJet.SignUpPage.memberEnrollment(SignUpPage.java:73)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.sendKeys(Unknown Source)
+	at utilsSpiceJet.UtilsSpiceJet.type(UtilsSpiceJet.java:99)
+	at pagesSpiceJet.SignUpPage.memberEnrollment(SignUpPage.java:71)
 	at testSpiceJet.TC_03_ValidateSignUp.tc_03_ValidateSignUp(TC_03_ValidateSignUp.java:23)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames
+... Removed 35 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Failed_suite__Suite_-class-failed -->
-          <div class="suite-Failed_suite__Suite_-class-failed">
+          <div class="suite-Failed_suite__Suite_-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">testSpiceJet.TC_07_FillingPassengerAndPaymentInfo</span>
+              <img src="passed.png"/>
+              <span class="class-name">testSpiceJet.TC_04_LoginFunctionality</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="tc_07_FillingPassengerAndPaymentInfo">
-                  </a> <!-- tc_07_FillingPassengerAndPaymentInfo -->
-                  <span class="method-name">tc_07_FillingPassengerAndPaymentInfo</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at testSpiceJet.TC_07_FillingPassengerAndPaymentInfo.tc_07_FillingPassengerAndPaymentInfo(TC_07_FillingPassengerAndPaymentInfo.java:24)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
+                  <a name="tc_04_LoginFunctionality(ninugmail.com, qwerty@123QwERTY, //div[@class=&#039;css-76zvg2 r-1ttbpl1 r-18tvxmy r-1enofrn r-1bymd8e&#039;],...)">
+                  </a> <!-- tc_04_LoginFunctionality(ninugmail.com, qwerty@123QwERTY, //div[@class='css-76zvg2 r-1ttbpl1 r-18tvxmy r-1enofrn r-1bymd8e'],...) -->
+                  <span class="method-name">tc_04_LoginFunctionality</span>
+                  <span class="parameters">(ninugmail.com, qwerty@123QwERTY, //div[@class='css-76zvg2 r-1ttbpl1 r-18tvxmy r-1enofrn r-1bymd8e'], Please enter a valid email address)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc_04_LoginFunctionality(, qwerty@123QWERTY, //div[@class=&#039;css-76zvg2 r-1ttbpl1 r-18tvxmy r-1enofrn r-1bymd8e&#039;], Please enter...)">
+                  </a> <!-- tc_04_LoginFunctionality(, qwerty@123QWERTY, //div[@class='css-76zvg2 r-1ttbpl1 r-18tvxmy r-1enofrn r-1bymd8e'], Please enter...) -->
+                  <span class="method-name">tc_04_LoginFunctionality</span>
+                  <span class="parameters">(, qwerty@123QWERTY, //div[@class='css-76zvg2 r-1ttbpl1 r-18tvxmy r-1enofrn r-1bymd8e'], Please enter a valid email address)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc_04_LoginFunctionality(ninu@gmail.com, , //div[text()=&#039;Please enter a valid password&#039;], Please enter a valid password)">
+                  </a> <!-- tc_04_LoginFunctionality(ninu@gmail.com, , //div[text()='Please enter a valid password'], Please enter a valid password) -->
+                  <span class="method-name">tc_04_LoginFunctionality</span>
+                  <span class="parameters">(ninu@gmail.com, , //div[text()='Please enter a valid password'], Please enter a valid password)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc_04_LoginFunctionality(ninu@gmail.com, qwerty@123QwERTY, //div[contains(text(),&#039;Invalid Username/Password&#039;)], Invalid Usern...)">
+                  </a> <!-- tc_04_LoginFunctionality(ninu@gmail.com, qwerty@123QwERTY, //div[contains(text(),'Invalid Username/Password')], Invalid Usern...) -->
+                  <span class="method-name">tc_04_LoginFunctionality</span>
+                  <span class="parameters">(ninu@gmail.com, qwerty@123QwERTY, //div[contains(text(),'Invalid Username/Password')], Invalid Username/Password)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Failed_suite__Suite_-class-failed -->
+          </div> <!-- suite-Failed_suite__Suite_-class-passed -->
           <div class="suite-Failed_suite__Suite_-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -214,21 +244,6 @@ Session ID: 3732b0bd93d68c8b52f3b06137d8a82e
                   </a> <!-- tc_03_ValidateSignUp(Miss, , , Japan, 16, December, 2003, , , , , //div[contains(text(),'Please fill all mandatory fields...) -->
                   <span class="method-name">tc_03_ValidateSignUp</span>
                   <span class="parameters">(Miss, , , Japan, 16, December, 2003, , , , , //div[contains(text(),'Please fill all mandatory fields marked with an')], Please fill all mandatory fields marked with an '*' to proceed)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Failed_suite__Suite_-class-passed -->
-          <div class="suite-Failed_suite__Suite_-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testSpiceJet.TC_06_SelectFlight</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="tc_06_SelectFlight">
-                  </a> <!-- tc_06_SelectFlight -->
-                  <span class="method-name">tc_06_SelectFlight</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -248,6 +263,14 @@ Session ID: 3732b0bd93d68c8b52f3b06137d8a82e
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test(failed)&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;testSpiceJet.TC_04_LoginFunctionality&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;close&quot;/&gt;
+          &lt;include name=&quot;start&quot;/&gt;
+          &lt;include name=&quot;tc_04_LoginFunctionality&quot;/&gt;
+          &lt;include name=&quot;declareSheetName&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- testSpiceJet.TC_04_LoginFunctionality --&gt;
       &lt;class name=&quot;testSpiceJet.TC_03_ValidateSignUp&quot;&gt;
         &lt;methods&gt;
           &lt;include name=&quot;tc_03_ValidateSignUp&quot; invocation-numbers=&quot;0 1&quot;/&gt;
@@ -256,20 +279,6 @@ Session ID: 3732b0bd93d68c8b52f3b06137d8a82e
           &lt;include name=&quot;declareSheetName&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- testSpiceJet.TC_03_ValidateSignUp --&gt;
-      &lt;class name=&quot;testSpiceJet.TC_06_SelectFlight&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;close&quot;/&gt;
-          &lt;include name=&quot;start&quot;/&gt;
-          &lt;include name=&quot;tc_06_SelectFlight&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- testSpiceJet.TC_06_SelectFlight --&gt;
-      &lt;class name=&quot;testSpiceJet.TC_07_FillingPassengerAndPaymentInfo&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;tc_07_FillingPassengerAndPaymentInfo&quot;/&gt;
-          &lt;include name=&quot;close&quot;/&gt;
-          &lt;include name=&quot;start&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- testSpiceJet.TC_07_FillingPassengerAndPaymentInfo --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test(failed) --&gt;
 &lt;/suite&gt; &lt;!-- Failed suite [Suite] --&gt;
@@ -283,7 +292,7 @@ Session ID: 3732b0bd93d68c8b52f3b06137d8a82e
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test(failed) (3 classes)</span>
+                <span class="test-name">Test(failed) (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -309,28 +318,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'tc_07_FillingPassengerAndPaymentInfo')
-data.setCell(0, 2, 'testSpiceJet.TC_07_FillingPassengerAndPaymentInfo')
-data.setCell(0, 3, 35124);
+data.setCell(0, 1, 'tc_03_ValidateSignUp')
+data.setCell(0, 2, 'testSpiceJet.TC_03_ValidateSignUp')
+data.setCell(0, 3, 22150);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'tc_06_SelectFlight')
-data.setCell(1, 2, 'testSpiceJet.TC_06_SelectFlight')
-data.setCell(1, 3, 14604);
+data.setCell(1, 1, 'tc_03_ValidateSignUp')
+data.setCell(1, 2, 'testSpiceJet.TC_03_ValidateSignUp')
+data.setCell(1, 3, 9787);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'tc_03_ValidateSignUp')
-data.setCell(2, 2, 'testSpiceJet.TC_03_ValidateSignUp')
-data.setCell(2, 3, 11014);
+data.setCell(2, 1, 'tc_04_LoginFunctionality')
+data.setCell(2, 2, 'testSpiceJet.TC_04_LoginFunctionality')
+data.setCell(2, 3, 5122);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'tc_03_ValidateSignUp')
-data.setCell(3, 2, 'testSpiceJet.TC_03_ValidateSignUp')
-data.setCell(3, 3, 9867);
+data.setCell(3, 1, 'tc_04_LoginFunctionality')
+data.setCell(3, 2, 'testSpiceJet.TC_04_LoginFunctionality')
+data.setCell(3, 3, 3894);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'tc_04_LoginFunctionality')
+data.setCell(4, 2, 'testSpiceJet.TC_04_LoginFunctionality')
+data.setCell(4, 3, 3630);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'tc_04_LoginFunctionality')
+data.setCell(5, 2, 'testSpiceJet.TC_04_LoginFunctionality')
+data.setCell(5, 3, 2913);
 window.suiteTableData['Failed_suite__Suite_']= { tableData: data, tableDiv: 'times-div-Failed_suite__Suite_'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 47 seconds</span>
               <div id="times-div-Failed_suite__Suite_">
               </div> <!-- times-div-Failed_suite__Suite_ -->
             </div> <!-- times-div -->
@@ -361,63 +378,89 @@ return data;
                 <span class="method-name">declareSheetName</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testSpiceJet.TC_04_LoginFunctionality</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">declareSheetName</span>
+                <span class="method-start">12 ms</span>
+              </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">start</span>
-                <span class="method-start">1438 ms</span>
+                <span class="method-start">1634 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">tc_03_ValidateSignUp(Miss, , , Japan, 16, December, 2003, , , , , //div[contains(text(),'Please fill all mandatory fields...)</span>
-                <span class="method-start">12822 ms</span>
+                <span class="method-name">tc_04_LoginFunctionality(, qwerty@123QWERTY, //div[@class='css-76zvg2 r-1ttbpl1 r-18tvxmy r-1enofrn r-1bymd8e'], Please enter...)</span>
+                <span class="method-start">13811 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">22706 ms</span>
+                <span class="method-start">17705 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">start</span>
-                <span class="method-start">23205 ms</span>
+                <span class="method-start">18160 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">tc_04_LoginFunctionality(ninu@gmail.com, , //div[text()='Please enter a valid password'], Please enter a valid password)</span>
+                <span class="method-start">28563 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">31480 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">start</span>
+                <span class="method-start">32144 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">tc_04_LoginFunctionality(ninugmail.com, qwerty@123QwERTY, //div[@class='css-76zvg2 r-1ttbpl1 r-18tvxmy r-1enofrn r-1bymd8e'],...)</span>
+                <span class="method-start">42450 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">46080 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">start</span>
+                <span class="method-start">46484 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">tc_04_LoginFunctionality(ninu@gmail.com, qwerty@123QwERTY, //div[contains(text(),'Invalid Username/Password')], Invalid Usern...)</span>
+                <span class="method-start">57131 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">62253 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testSpiceJet.TC_03_ValidateSignUp</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">start</span>
+                <span class="method-start">62882 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">tc_03_ValidateSignUp(Miss, , , Japan, 16, December, 2003, , , , , //div[contains(text(),'Please fill all mandatory fields...)</span>
+                <span class="method-start">73108 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">82895 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">start</span>
+                <span class="method-start">83291 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">tc_03_ValidateSignUp(Mr, Jaiswal, S, India, 29, September, 1996, 1234567890, ninu@gmail.com, qwerty@123QWERTY, qwerty@123...)</span>
-                <span class="method-start">33615 ms</span>
+                <span class="method-start">93509 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">45100 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testSpiceJet.TC_06_SelectFlight</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">start</span>
-                <span class="method-start">45553 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">tc_06_SelectFlight</span>
-                <span class="method-start">56266 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">close</span>
-                <span class="method-start">70870 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testSpiceJet.TC_07_FillingPassengerAndPaymentInfo</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">start</span>
-                <span class="method-start">71245 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">tc_07_FillingPassengerAndPaymentInfo</span>
-                <span class="method-start">82084 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">close</span>
-                <span class="method-start">117492 ms</span>
+                <span class="method-start">116181 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
