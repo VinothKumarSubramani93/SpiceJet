@@ -21,8 +21,5 @@ public class TC_07_FillingPassengerAndPaymentInfo extends BaseClassSJ {
 		passenger.fillPassengerDetails("Mr", "Jackson", "Michael", "9876543210", "jackson@gmail.com", "India");
 		PaymentPage payment=new PaymentPage();
 		payment.fillPaymentPageWOProceeding("5354 1234 4321 5678", "Jackson", "12", "25", "123");
-		Assert.assertTrue(false);
-		// Above line fails the testCase then screenshot captured. We can find the dummy details entered in payment page 
-		//by seeing the screen shot.
 	}
 }
