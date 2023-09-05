@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testSpiceJet.TC_03_ValidateSignUp">
+      <class name="testSpiceJet.TC_04_LoginFunctionality">
         <methods>
-          <include name="tc_03_ValidateSignUp" invocation-numbers="1"/>
           <include name="close"/>
           <include name="start"/>
+          <include name="tc_04_LoginFunctionality" invocation-numbers="0 2"/>
           <include name="declareSheetName"/>
         </methods>
-      </class> <!-- testSpiceJet.TC_03_ValidateSignUp -->
+      </class> <!-- testSpiceJet.TC_04_LoginFunctionality -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

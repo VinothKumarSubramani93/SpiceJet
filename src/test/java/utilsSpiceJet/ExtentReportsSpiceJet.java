@@ -12,7 +12,8 @@ public class ExtentReportsSpiceJet {
 		reporter.config().setDocumentTitle("Spice Jet Reports");
 		
 		ExtentReports extent=new ExtentReports();
-		extent.attachReporter(reporter);extent.setSystemInfo("Performed By : ", "S.Vinothkumar JAT-5");
+		extent.attachReporter(reporter);
+		extent.setSystemInfo("Performed By : ", "S.Vinothkumar JAT-5");
 		return extent;
 	}
 }

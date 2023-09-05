@@ -7,6 +7,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.util.Date;
 import java.util.Properties;
 import java.util.Set;
@@ -26,6 +27,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -67,28 +69,28 @@ public class UtilsSpiceJet {
 			driver = new ChromeDriver();
 		}
 		driver.manage().window().maximize();
-		driver.manage().timeouts().pageLoadTimeout(15, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
 		waitImplicit();
 	}
 
 	public static void waitExplicit(WebElement element) {
-		WebDriverWait wait = new WebDriverWait(driver, 20);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOf(element));
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
 	
 	public static void waitUntillVisiblity(WebElement element) {
-		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
 
 	public static void waitExplicitUntillTitle(String titleToWait) {
-		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.titleIs(titleToWait));
 	}
 
 	public static void waitImplicit() {
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 
 	public static void getApplication(String url) {
@@ -221,5 +223,11 @@ public class UtilsSpiceJet {
 	public boolean isElementDisplayed(WebElement element) {
 		return element.isDisplayed();
 	}
-
+	
+	public void flWait() {
+		FluentWait<WebDriver> wait=new FluentWait<>(driver)
+				.withTimeout(Duration.ofSeconds(10))
+				.pollingEvery(Duration.ofMillis(200))
+				.ignoring(Exception.class);
+	}
 }

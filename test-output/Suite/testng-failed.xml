@@ -6,14 +6,6 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testSpiceJet.TC_04_LoginFunctionality">
-        <methods>
-          <include name="close"/>
-          <include name="start"/>
-          <include name="tc_04_LoginFunctionality"/>
-          <include name="declareSheetName"/>
-        </methods>
-      </class> <!-- testSpiceJet.TC_04_LoginFunctionality -->
       <class name="testSpiceJet.TC_03_ValidateSignUp">
         <methods>
           <include name="tc_03_ValidateSignUp" invocation-numbers="0 1"/>
@@ -22,6 +14,13 @@
           <include name="declareSheetName"/>
         </methods>
       </class> <!-- testSpiceJet.TC_03_ValidateSignUp -->
+      <class name="testSpiceJet.TC_07_FillingPassengerAndPaymentInfo">
+        <methods>
+          <include name="tc_07_FillingPassengerAndPaymentInfo"/>
+          <include name="close"/>
+          <include name="start"/>
+        </methods>
+      </class> <!-- testSpiceJet.TC_07_FillingPassengerAndPaymentInfo -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
